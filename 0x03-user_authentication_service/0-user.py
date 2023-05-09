@@ -4,10 +4,11 @@
 """
 
 
-from sqlalchemy import Column, Integer, String, orm
+from sqlalchemy import Column, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
 
+Base = declarative_base()
 
-Base = orm.declarative_base()
 
 class User(Base):
     """
