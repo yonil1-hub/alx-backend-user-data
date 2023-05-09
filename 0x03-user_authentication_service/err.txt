@@ -1,0 +1,5 @@
+remote: Resolving deltas:   0% (0/2)        remote: Resolving deltas:  50% (1/2)        remote: Resolving deltas: 100% (2/2)        remote: Resolving deltas: 100% (2/2), completed with 2 local objects.        
+remote: fatal error in commit_refs        
+To https://github.com/yonil1-hub/alx-backend-user-data
+ ! [remote rejected] master -> master (failure)
+error: failed to push some refs to 'https://github.com/yonil1-hub/alx-backend-user-data'
