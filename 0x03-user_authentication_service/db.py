@@ -29,6 +29,7 @@ class DB:
         don't exist,and sets the session object to None.
         """
         self._engine = create_engine("sqlite:///a.db", echo=False)
+        Base.metadata.drop_all(self._engine)
         Base.metadata.create_all(self._engine)
         self.__session = None
 
