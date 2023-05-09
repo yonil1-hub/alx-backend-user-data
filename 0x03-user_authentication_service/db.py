@@ -5,6 +5,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.exc import InvalidRequestError
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.orm.exc import NoResultFound
+from sqlalchemy.orm import session
 from typing import TypeVar
 from user import Base, User
 
@@ -34,7 +35,7 @@ class DB:
         self.__session = None
 
     @property
-    def _session(self) -> sqlalchemy.orm.Session:
+    def _session(self) -> session:
         """
         Session Getter Method
 
